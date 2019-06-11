@@ -37,6 +37,19 @@ eval "$(rbenv init -)"
 #nodebrew setting
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+#If you need to have ruby first in your PATH run:
+  export PATH="/usr/local/opt/ruby/bin:$PATH" 
+
+#For compilers to find ruby you may need to set:
+  export LDFLAGS="-L/usr/local/opt/ruby/lib"
+  export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
+#For pkg-config to find ruby you may need to set:
+  export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+
+  #NodeJS's PATH
+  export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 git_branch() {
   echo $(git branch --no-color 2>/dev/null | sed -ne "s/^\* \(.*\)$/\1/p")
 }

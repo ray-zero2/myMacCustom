@@ -198,3 +198,8 @@ set shiftwidth=2
 
 set number
 set relativenumber
+
+"emmetをtabで展開
+autocmd FileType html,css,scss imap <buffer><expr><tab>
+    \ emmet#isExpandable() ? "\<plug>(emmet-expand-abbr)" :
+    \ "\<tab>"

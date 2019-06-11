@@ -19,10 +19,10 @@ Plugin 'tpope/vim-fugitive'
 "ここから使用するプラグインを記載
 
 "自動補完ツール
-Plugin 'Shougo/neocomplcache.git'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
-let g:neocomplcache_enable_at_startup = 1
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+let g:deoplete#enable_at_startup = 1
 
 "ディレクトリツリー表示
 Plugin 'scrooloose/nerdtree'
@@ -35,6 +35,8 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 
+
+Plugin 'tpope/vim-repeat'
 
 
 "記載ここまで
